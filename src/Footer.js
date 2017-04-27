@@ -7,7 +7,7 @@ import './footer.css';
 
 export default class Footer extends React.Component {
   render() {
-    return <div className="footerWrapper col-md-12">
+    return <div className="col-md-12 footerWrapper">
       <div className="addressWrapper col-md-2 col-md-offset-2">
         <p className="footerText">NY Auto Depot</p>
         <p className="footerText">800-899-8233</p>
@@ -36,6 +36,7 @@ export default class Footer extends React.Component {
           <img src="" alt="QR_code" />
         </ul>
       </div>
+      <div className="push"></div>
     </div>
 
   }
