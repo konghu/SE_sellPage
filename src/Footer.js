@@ -3,32 +3,36 @@
  */
 
 import React from 'react';
+import './footer.css';
 
 export default class Footer extends React.Component {
   render() {
-    return <div className="footerWarapper" style={{bottom: "0", height: "200px", width: "1440px", backgroundColor: "rgb(72, 77, 86)"}}>
-      <div className="addressWrapper" style={{float: "left", paddingLeft: "200px", paddingTop: "30px", width:"150px"}}>
-        <p style={{fontWeight: "bold", fontSize: "12px", color: "rgb(237, 241, 247)"}}>NY Auto Depot</p>
-        <p style={{fontSize: "10px", color:"rgb(215, 217, 221)"}}>800-899-8233</p>
-        <p style={{fontSize: "10px", color:"rgb(215, 217, 221)"}}>15 Windsor Ct, Mineola, NY</p>
-        <p style={{fontSize: "10px", color:"rgb(215, 217, 221)"}}>Mon-Sun 10am-7am</p>
+    return <div className="footerWrapper col-md-12">
+      <div className="addressWrapper col-md-2 col-md-offset-2">
+        <p className="footerText">NY Auto Depot</p>
+        <p className="footerText">800-899-8233</p>
+        <p className="footerText">15 Windsor Ct, Mineola, NY</p>
+        <p className="footerText">Mon-Sun 10am-7am</p>
       </div>
-      <div className="list1" style={{float: "left", width: "100px", paddingTop: "30px"}}>
-        <ul style= {{listStyleType: "none"}} >
-          <li style={{fontSize: "10px", color:"rgb(215, 217, 221)", paddingBottom: "15px"}}>Company</li>
-          <li style={{fontSize: "10px", color:"rgb(215, 217, 221)", paddingBottom: "15px"}}>Jobs</li>
-          <li style={{fontSize: "10px", color:"rgb(215, 217, 221)"}}>Blog</li>
+
+      <div className="list1 col-md-1">
+        <ul className="footerText">
+          <li className="footerText">Company</li>
+          <li className="footerText">Jobs</li>
+          <li className="footerText">Blog</li>
         </ul>
       </div>
-      <div className="list2" style={{float: "left", width: "100px", paddingTop: "30px"}}>
-        <ul style= {{listStyleType: "none"}} >
-          <li style={{fontSize: "10px", color:"rgb(215, 217, 221)", paddingBottom: "15px"}}>Terms of Service</li>
-          <li style={{fontSize: "10px", color:"rgb(215, 217, 221)", paddingBottom: "15px"}}>Privacy Policy</li>
+
+      <div className="list2 col-md-2">
+        <ul className="footerText">
+          <li className="footerText">Terms of Service</li>
+          <li className="footerText">Privacy Policy</li>
         </ul>
       </div>
-      <div className="list3" style={{float: "left", width: "100px", paddingTop: "30px"}}>
-        <ul style= {{listStyleType: "none"}} >
-          <li style={{fontSize: "10px", color:"rgb(215, 217, 221)", paddingBottom: "15px"}}>Email Us</li>
+
+      <div className="col-md-5">
+        <ul className="footerText">
+          <li className="footerText">Email Us</li>
           <img src="" alt="QR_code" />
         </ul>
       </div>
