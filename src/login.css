@@ -46,3 +46,9 @@ vr {
     width: 50%;
     margin: 3.25%;
 }
+
+@media only screen and (max-width: 992px) {
+    vr {
+        display: none;
+    }
+}
