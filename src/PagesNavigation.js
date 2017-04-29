@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import "./PagesNavigation.css"
 
 class NavigationLink extends Component {
   static propTypes = {
@@ -9,14 +10,15 @@ class NavigationLink extends Component {
   render() {
     const {text, url} = this.props;
     var style = {
-      display: "inline"
+      display: "inline",
+        textAlign: "center",
     };
 
     var a_style = {
       color: "black",
       display: "inline-block",
       padding: "30px",
-      textDecoration: "none"
+      textDecoration: "none",
     }
 
     return (
@@ -30,17 +32,11 @@ class NavigationLink extends Component {
 export default class PagesNavigation extends Component {
 
   render() {
-    const ulStyle = {
-      listStyleType: "none", 
-      margin: 0,
-      padding: 0,
-      textAlign: "center",
-      fontSize: "20px"
-    };
-
     return (
-      <div className="navWrapper" style={{display: "inline"}}>
-        <ul className="listsWrapper" style={ulStyle}>
+      <div className="navWrapper">
+
+
+        <ul className="navListsWrapper" style={{textAlign: "center", fontSize: "20px"}}>
           <NavigationLink text="Home" url="default.asp" />
           <NavigationLink text="Buy" url="buy.asp" />
           <NavigationLink text="Sell" url="sell.asp" />
@@ -49,6 +45,7 @@ export default class PagesNavigation extends Component {
           <NavigationLink text="MyList" url="mylist.asp" />
           <NavigationLink text="Help" url="help.asp" />
         </ul>
+        <button type="button" className="signIn btn btn-primary btn-sm">Sign in</button>
         </div>
     );
   }
